@@ -16,7 +16,7 @@ def main():
     import sys
     print("Thanks for using Currencyboy")
     print("Built by Aitzaz Imtiaz")
-    timesleep(2)
+    time.sleep(2)
     source_currency = sys.argv[1]
     destination_currency = sys.argv[2]
     amount = float(sys.argv[3])
