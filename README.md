@@ -5,5 +5,5 @@ Just to convert currency of any supported currency to other.
     cd Currency-Boy
     make install
 That's it. Now
-    currencyboy USD PKR 1000
+    <code>currencyboy USD PKR 1000</code>
 This convert thousand dollars to PKR. Now you must know your currency short form.
