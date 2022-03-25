@@ -11,7 +11,7 @@ def convert_currency_yahoofin(src, dst, amount):
     latest_price = latest_data.iloc[-1].close
     # return the latest datetime with the converted amount
     return last_updated_datetime, latest_price * amount
-if __name__ == "__main__":
+def main():
     import sys
     source_currency = sys.argv[1]
     destination_currency = sys.argv[2]
