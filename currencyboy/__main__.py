@@ -1,5 +1,6 @@
 import yahoo_fin.stock_info as si
 from datetime import datetime, timedelta
+import time
 def convert_currency_yahoofin(src, dst, amount):
     # construct the currency pair symbol
     symbol = f"{src}{dst}=X"
@@ -13,9 +14,12 @@ def convert_currency_yahoofin(src, dst, amount):
     return last_updated_datetime, latest_price * amount
 def main():
     import sys
+    print("Thanks for using Currencyboy")
+    print("Built by Aitzaz Imtiaz")
+    timesleep(2)
     source_currency = sys.argv[1]
     destination_currency = sys.argv[2]
     amount = float(sys.argv[3])
     last_updated_datetime, exchange_rate = convert_currency_yahoofin(source_currency, destination_currency, amount)
     print("Last updated datetime:", last_updated_datetime)
-    print(f"{amount} {source_currency} = {exchange_rate} {destination_currency}")
+    print(f"{amount} {source_currency} = {exchange_rate} {destination_currency}. Source from Yahoo, made by Aitzaz Imtiaz")
